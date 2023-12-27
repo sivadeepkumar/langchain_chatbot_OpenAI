@@ -7,12 +7,17 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 import os
 from flask_cors import CORS 
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
 # Set your OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+# os.environ["OPENAI_API_KEY"] = ""
+app.config['OPENAI_API_KEY'] = os.environ.get('OPENAI_API_KEY')
 
 # List of PDF filenames
 pdf_filenames = ["one.pdf","two.pdf","three.pdf","four.pdf","five.pdf",]   # "one.pdf","two.pdf","three.pdf","four.pdf","five.pdf","six.pdf","seven.pdf","eight.pdf","nine.pdf","ten.pdf","a.pdf","b.pdf","c.pdf","d.pdf","e.pdf","f.pdf","g.pdf","h.pdf","i.pdf","j.pdf","k.pdf","l.pdf"
