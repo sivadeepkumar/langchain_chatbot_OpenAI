@@ -33,7 +33,7 @@ class Chat(db.Model):
     result = db.Column(db.String(5000), nullable=True)
 
 # List of PDF filenames
-pdf_filenames = ["support_side_ten_question.pdf"]   
+pdf_filenames = ["Groups_and_Records.pdf"]   
 
 raw_text = ""
 
