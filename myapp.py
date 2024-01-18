@@ -9,6 +9,7 @@ import os
 from flask_cors import CORS 
 from dotenv import load_dotenv
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import Query
 from datetime import datetime 
 # Load environment variables from .env
 load_dotenv()
@@ -80,29 +81,33 @@ def query():
         return jsonify({"error": str(e)})
 
 
-# When the user clicks on new chat or existing chat it have to filter for db and need to give data
 @app.route('/get_data', methods=['POST'])
 def get_data():
     try:
         import pdb 
         pdb.set_trace()
         data = request.get_json()
-        seperate_chat = data['chat_name']
+        separate_chat = data['chat_name']
+
+
+        # Get all chats
+        chats = Chat.query.all()
+
+        # Format the data
+        chat_data = [{'id': chat.id, 'timestamp': chat.timestamp, 'query': chat.query, 'result': chat.result} for chat in chats]
 
         # Query the database for the specified chat_name
-        # chat_data = Chat.query.filter(Chat.chat_name == seperate_chat).all()
-        chat_data2 = Chat.query.filter_by(chat_name=seperate_chat).all()
+        # chat_data = Chat.query.filter_by(chat_name=separate_chat).all()
+        
         # Format the data for response
         formatted_data = [{'timestamp': chat.timestamp, 'query': chat.query, 'result': chat.result} for chat in chat_data]
         return jsonify({'chat_data': formatted_data})
     except Exception as e:
         return jsonify({"error": str(e)})
 
+
 if __name__ == '__main__':
     # Create the database tables before running the app
     with app.app_context():
         db.create_all()
     app.run(debug=True)
-
-
-
