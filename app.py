@@ -4,6 +4,8 @@ from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.llms.openai import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
+from flask_cors import CORS 
+
 import os
 import sqlite3
 
@@ -11,6 +13,7 @@ load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 app = Flask(__name__)
+CORS(app)
 
 # Load extracted text
 with open('extracted_text.txt', 'r') as f:
