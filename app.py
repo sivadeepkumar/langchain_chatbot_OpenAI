@@ -8,9 +8,10 @@ import os
 from flask_cors import CORS
 load_dotenv()
 
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_API_KEY = "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"
+# OPENAI_API_KEY =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"OPENAI_API_KEY")
+
 app = Flask(__name__)
+app.config['OPENAI_API_KEY'] = os.environ.get('OPENAI_API_KEY')
 CORS(app)
 # Load extracted text
 with open('extracted_text.txt', 'r') as f:
