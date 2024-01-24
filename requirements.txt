@@ -24,6 +24,7 @@ Flask-Cors==4.0.0
 Flask-SQLAlchemy==3.1.1
 frozenlist==1.4.1
 fsspec==2023.12.2
+gpt4all==2.0.2
 greenlet==3.0.3
 gunicorn==21.2.0
 h11==0.14.0
@@ -82,6 +83,7 @@ pure-eval==0.2.2
 pydantic==2.5.3
 pydantic_core==2.14.6
 Pygments==2.17.2
+PyMySQL==1.1.0
 pypdf==3.17.4
 PyPDF2==3.0.1
 python-dateutil==2.8.2

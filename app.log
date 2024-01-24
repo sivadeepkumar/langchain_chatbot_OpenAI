@@ -1623,3 +1623,945 @@ INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/lan
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:12:49] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:12:53] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:02] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:05] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:10] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:17] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:20] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:23] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:25] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:33] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:47] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:13:50] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:14:00] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:14:04] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:14:05] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:14:07] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:14:15] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:19] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:19] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:27] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:27] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:27] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:28] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:35] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:58] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:58] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:58] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:19:58] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:12] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:12] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:12] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:12] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:22] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:22] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:22] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:22] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:29] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:30] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:31] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:31] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:31] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:35] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:35] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:20:46] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:22] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:22] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:22] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:22] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:27] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:27] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:27] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:21:28] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:08] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:17] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:17] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:17] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:17] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:29] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:29] "GET /all_chat HTTP/1.1" 200 -
+ERROR:root:Error updating chat name: no such column: chat_name_id
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:31] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:32] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:33] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:33] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:42] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:43] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:45] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:45] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:45] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:53] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:53] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:54] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:54] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:22:55] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:07] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:07] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:08] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:08] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:08] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:15] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:15] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:16] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:16] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:17] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:35] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:23:35] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:28] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:28] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:32] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:37] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "4" updated to "history".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:37] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:37] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:37] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:37] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:41] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:55] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:55] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:59] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:59] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:24:59] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:25:05] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:25:07] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "5" updated to "history".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:25:32] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:25:35] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "4" updated to "history".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:11] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:13] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "4" updated to "aryan".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:29] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:36] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "4" updated to "aryan".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:41] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:root:Chat with id "5" updated to "aryan".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:51] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:26:54] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:04] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:07] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:12] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:14] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:17] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:17] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:19] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:19] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:19] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:22] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:27:51] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "4" updated to "history".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:28:13] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:28:18] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:28:27] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:28:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:28:39] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:29:06] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:29:12] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:29:37] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:29:40] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:29:49] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:15] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:28] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:40] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:55] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:57] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:57] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "4" updated to "history".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:58] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:59] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:30:59] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:31:00] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:33:26] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:33:40] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:33:45] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:33:56] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:00] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:10] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:17] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:21] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:26] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:29] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:39] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:43] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:34:49] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:09] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:12] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:17] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:22] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:27] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:39] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:35:41] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:11] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:14] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:26] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:30] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:38] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:44] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:49] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:52] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:36:59] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:37:11] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:37:16] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:37:21] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:37:26] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:37:29] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:37:43] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:40:30] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:40:39] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:40:43] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:41:14] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:41:14] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:41:19] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:41:19] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:41:19] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:43:09] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:43:13] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:43:18] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:43:56] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:08] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:08] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:09] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:10] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:10] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:10] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:44:57] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:45:02] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:08] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:19] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:23] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:27] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:50] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:50] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:50] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:46:59] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:06] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:11] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:16] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:16] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:18] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:20] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:20] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:21] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:24] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:47:30] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:48:26] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:48:33] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:48:43] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:48:48] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:48:52] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:06] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:06] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:25] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:25] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:36] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:36] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:36] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:36] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:48] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:49:48] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:52:45] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:52:45] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:54:47] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:54:47] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:54:55] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:54:56] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:54:56] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:54:56] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:00] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:00] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:27] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:31] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:32] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:32] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:32] "OPTIONS /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:32] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:42] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:50] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:55:59] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:07] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:14] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:29] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:31] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:37] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:46] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:49] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:52] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:56:55] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:05] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:10] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:12] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:24] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:29] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:33] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:41] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:44] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:47] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:52] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:56] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:57:59] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:06] "POST /delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:09] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:13] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:23] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:26] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:28] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:31] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:37] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:40] "POST /individual_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "5" updated to "history".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:58:59] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:04] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:12] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:15] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:24] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:28] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:30] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:34] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:51] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:53] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 03:59:57] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:00:02] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:00:04] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:00:06] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:00:41] "GET /all_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "5" updated to "siva".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:00:50] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:00:53] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:00] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:04] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:05] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:05] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:10] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:14] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:17] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:20] "POST /individual_chat HTTP/1.1" 200 -
+INFO:root:Chat with id "5" updated to "ravi".
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:31] "POST /update_chat_name HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:33] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:37] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:47] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:51] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:52] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:52] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:07:55] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:12:44] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 04:12:44] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:11:29] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:11:53] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:00] "POST /individual_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:12] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:19] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:30] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:35] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:42] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:12:44] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:13:08] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:13:15] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:13:17] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:39:46] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:39:46] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:39:55] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:39:55] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:40:17] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:40:17] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:41:30] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:41:30] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:30] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:30] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:34] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:39] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:40] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:40] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:58] "OPTIONS /all_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 19:45:59] "GET /all_chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 20:13:53] "POST /query2 HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 20:16:55] "POST /query2 HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 20:17:35] "POST /query HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 20:18:47] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 21:47:16] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 21:47:45] "POST /new_chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:03:37] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:18:50] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:18:50] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:18:51] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:18:54] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:24:46] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:24:46] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:24:46] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:24:54] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:24:54] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:25:36] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:25:36] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:25:39] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:26:08] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:26:08] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:26:12] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:33:56] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:33:56] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:33:58] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:34:00] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:35:05] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2024 23:35:05] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:08:32] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:08:58] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:08:58] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:03] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:06] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:06] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:10] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:39] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:39] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:42] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:45] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:09:45] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:11:07] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:11:07] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:11:10] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:11:12] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:11:13] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:11:14] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:06] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:06] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:07] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:09] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:10] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:11] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:12] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:12] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:45] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:12:45] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:13:35] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:13:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:13:40] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:15:16] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:15:16] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:25:07] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:25:07] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:35:36] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:35:36] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:36:41] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:36:41] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:36:54] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:36:54] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:37:06] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:37:06] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:38:41] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:38:41] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:39:59] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:39:59] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:54:02] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 00:54:02] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:09:49] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:09:49] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:09:51] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:03] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:04] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:39] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:39] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:47] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:47] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:48] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:49] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:10:50] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:11:56] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:11:57] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:12:02] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:12:02] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:12:31] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:12:31] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:13:37] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:13:37] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:15:24] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:15:24] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:16:11] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:16:11] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:16:47] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:16:47] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:11] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:11] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:25] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:25] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:28] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:30] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:31] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:17:31] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:18:23] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:18:23] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:18:51] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:18:51] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:05] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:05] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:06] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:11] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:11] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:27] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:27] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:53] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:19:53] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:20:27] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:20:27] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:21:02] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:21:02] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:21:35] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:21:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:21:38] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:23:46] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:23:46] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:24:26] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:24:26] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:24:30] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:27:24] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:27:24] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:27:32] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 01:27:32] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:12:29] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:12:29] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:13:35] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:13:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:16:24] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:16:24] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:16:54] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:16:54] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:18:50] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:18:50] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:20:29] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:20:29] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:20:37] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:20:37] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:28:04] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:28:05] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:04] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:04] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:23] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:23] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:35] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:37] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:38] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:33:39] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:34:35] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:34:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:35:54] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:35:54] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:36:43] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:36:43] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:37:40] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:37:40] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:37:50] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:37:50] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:16] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:16] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:25] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:25] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:43] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:43] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:41:47] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:42:27] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:42:27] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:43:12] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:43:12] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:00] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:00] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:10] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:11] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:14] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:19] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:44:19] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:52:49] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:52:49] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:54:37] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:54:37] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:55:39] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:55:39] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:56:39] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:56:39] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:58:35] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 02:58:35] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:00:25] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:00:25] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:01:16] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:01:16] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:01:42] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:01:42] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:31:18] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:31:18] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:32:16] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 03:32:16] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 04:15:21] "OPTIONS /query HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 04:15:21] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/pdf_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 400 Bad Request"
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 21:36:02] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 305-313-719
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 22:25:07] "POST /webkorps_query HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2024 22:25:57] "POST /query HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dell/Desktop/practice/git_project/langchain_chatbot_OpenAI/app.py', reloading
+INFO:werkzeug: * Restarting with stat
