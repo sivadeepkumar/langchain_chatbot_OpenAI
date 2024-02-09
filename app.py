@@ -57,15 +57,15 @@ def webkorps_query():
     return jsonify(result)
 
 
-@app.route('/source', methods=['POST'])
+@app.route('/summary', methods=['POST'])
 def source():
     data = request.get_json()
     query = data['query']
+    source = data['source']
 
-    with open('source.txt', 'r') as f:
-        texts = f.read()
+
     embeddings = OpenAIEmbeddings()  
-    document_search = FAISS.from_texts([texts], embeddings)
+    document_search = FAISS.from_texts([source], embeddings)
     chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
     docs = document_search.similarity_search(query)
