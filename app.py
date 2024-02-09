@@ -58,7 +58,7 @@ def webkorps_query():
 
 
 @app.route('/summary', methods=['POST'])
-def source():
+def summary():
     data = request.get_json()
     query = data['query']
     source = data['source']
