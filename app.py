@@ -57,12 +57,12 @@ def realEstateQuery():
 
     return jsonify(result)
 
-@app.route('/asssetpanda', methods=['POST'])
-def asssetpanda():
+@app.route('/assetpanda', methods=['POST'])
+def assetpanda():
     data = request.get_json()
     query = data['query']
 
-    with open('extracted_text.txt', 'r') as f:
+    with open('assetpanda.txt', 'r') as f:
         texts = f.read()
     embeddings = OpenAIEmbeddings()  
     document_search = FAISS.from_texts([texts], embeddings)
