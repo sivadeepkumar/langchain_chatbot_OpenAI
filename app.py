@@ -23,7 +23,7 @@ def health_check():
 
 
 @app.route('/cryoport', methods=['POST'])
-def query():
+def cryoport():
     data = request.get_json()
     query = data['query']
 
@@ -57,7 +57,7 @@ def realEstateQuery():
 
     return jsonify(result)
 
-@app.route('/assetpanda', methods=['POST'])
+@app.route('/query', methods=['POST'])
 def assetpanda():
     data = request.get_json()
     query = data['query']
