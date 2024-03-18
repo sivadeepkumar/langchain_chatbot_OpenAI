@@ -22,12 +22,12 @@ def health_check():
     return 'OK', 200
 
 
-@app.route('/query', methods=['POST'])
+@app.route('/cryoport', methods=['POST'])
 def query():
     data = request.get_json()
     query = data['query']
 
-    with open('extracted_text.txt', 'r') as f:
+    with open('cryoport_text.txt', 'r') as f:
         texts = f.read()
     embeddings = OpenAIEmbeddings()  
     document_search = FAISS.from_texts([texts], embeddings)
@@ -39,6 +39,40 @@ def query():
 
     return jsonify(result)
 
+
+@app.route('/realEstateQuery', methods=['POST'])
+def realEstateQuery():
+    data = request.get_json()
+    query = data['query']
+
+    with open('estate.txt', 'r') as f:
+        texts = f.read()
+    embeddings = OpenAIEmbeddings()  
+    document_search = FAISS.from_texts([texts], embeddings)
+    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+
+
+    docs = document_search.similarity_search(query)
+    result = chain.run(input_documents=docs, question=query)
+
+    return jsonify(result)
+
+@app.route('/asssetpanda', methods=['POST'])
+def asssetpanda():
+    data = request.get_json()
+    query = data['query']
+
+    with open('extract_text.txt', 'r') as f:
+        texts = f.read()
+    embeddings = OpenAIEmbeddings()  
+    document_search = FAISS.from_texts([texts], embeddings)
+    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+
+
+    docs = document_search.similarity_search(query)
+    result = chain.run(input_documents=docs, question=query)
+
+    return jsonify(result)
 
 @app.route('/webkorps_query', methods=['POST'])
 def webkorps_query():
@@ -55,6 +89,7 @@ def webkorps_query():
     result = chain.run(input_documents=docs, question=query)
 
     return jsonify(result)
+
 
 
 @app.route('/summary', methods=['POST'])
