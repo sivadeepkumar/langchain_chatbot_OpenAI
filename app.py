@@ -62,7 +62,7 @@ def asssetpanda():
     data = request.get_json()
     query = data['query']
 
-    with open('extract_text.txt', 'r') as f:
+    with open('extracted_text.txt', 'r') as f:
         texts = f.read()
     embeddings = OpenAIEmbeddings()  
     document_search = FAISS.from_texts([texts], embeddings)
