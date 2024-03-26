@@ -3,15 +3,17 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain_community.vectorstores.faiss import FAISS 
 from langchain_community.llms.openai import OpenAI
 from langchain.chains.question_answering import load_qa_chain
-# from langchain.text_splitter import CharacterTextSplitter
 
 from dotenv import load_dotenv
 from flask_cors import CORS 
 import os
-# import sqlite3
 import logging
-
 load_dotenv()
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 app = Flask(__name__)
@@ -24,72 +26,87 @@ def health_check():
 
 @app.route('/cryoport', methods=['POST'])
 def cryoport():
-    data = request.get_json()
-    query = data['query']
+    try:
+        data = request.get_json()
+        query = data['query']
 
-    with open('cryoport_text.txt', 'r') as f:
-        texts = f.read()
-    embeddings = OpenAIEmbeddings()  
-    document_search = FAISS.from_texts([texts], embeddings)
-    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+        with open('cryoport_text.txt', 'r') as f:
+            texts = f.read()
+        embeddings = OpenAIEmbeddings()  
+        document_search = FAISS.from_texts([texts], embeddings)
+        chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
 
-    docs = document_search.similarity_search(query)
-    result = chain.run(input_documents=docs, question=query)
+        docs = document_search.similarity_search(query)
+        result = chain.run(input_documents=docs, question=query)
 
-    return jsonify(result)
+        return jsonify(result)
+    except Exception as e:
+        logger.exception("An error occurred in /cryoport endpoint.")
+        return jsonify({'error': 'Internal Server Error'}), 500
 
 
 @app.route('/realEstateQuery', methods=['POST'])
 def realEstateQuery():
-    data = request.get_json()
-    query = data['query']
+    try:
+        data = request.get_json()
+        query = data['query']
 
-    with open('estate.txt', 'r') as f:
-        texts = f.read()
-    embeddings = OpenAIEmbeddings()  
-    document_search = FAISS.from_texts([texts], embeddings)
-    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+        with open('estate.txt', 'r') as f:
+            texts = f.read()
+        embeddings = OpenAIEmbeddings()  
+        document_search = FAISS.from_texts([texts], embeddings)
+        chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
 
-    docs = document_search.similarity_search(query)
-    result = chain.run(input_documents=docs, question=query)
+        docs = document_search.similarity_search(query)
+        result = chain.run(input_documents=docs, question=query)
 
-    return jsonify(result)
+        return jsonify(result)
+    except Exception as e:
+        logger.exception("An error occurred in /realEstateQuery endpoint.")
+        return jsonify({'error': 'Internal Server Error'}), 500
 
 @app.route('/query', methods=['POST'])
 def assetpanda():
-    data = request.get_json()
-    query = data['query']
+    try:
+        data = request.get_json()
+        query = data['query']
 
-    with open('assetpanda.txt', 'r') as f:
-        texts = f.read()
-    embeddings = OpenAIEmbeddings()  
-    document_search = FAISS.from_texts([texts], embeddings)
-    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+        with open('assetpanda.txt', 'r') as f:
+            texts = f.read()
+        embeddings = OpenAIEmbeddings()  
+        document_search = FAISS.from_texts([texts], embeddings)
+        chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
 
-    docs = document_search.similarity_search(query)
-    result = chain.run(input_documents=docs, question=query)
+        docs = document_search.similarity_search(query)
+        result = chain.run(input_documents=docs, question=query)
 
-    return jsonify(result)
+        return jsonify(result)
+    except Exception as e:
+        logger.exception("An error occurred in /query (ASSETPANDA) endpoint.")
+        return jsonify({'error': 'Internal Server Error'}), 500
 
 @app.route('/webkorps_query', methods=['POST'])
 def webkorps_query():
-    data = request.get_json()
-    query = data['query']
+    try:
+        data = request.get_json()
+        query = data['query']
 
-    with open('webkorps_data.txt', 'r') as f:
-        texts = f.read()
-    embeddings = OpenAIEmbeddings()  
-    document_search = FAISS.from_texts([texts], embeddings)
-    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+        with open('webkorps_data.txt', 'r') as f:
+            texts = f.read()
+        embeddings = OpenAIEmbeddings()  
+        document_search = FAISS.from_texts([texts], embeddings)
+        chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
-    docs = document_search.similarity_search(query)
-    result = chain.run(input_documents=docs, question=query)
+        docs = document_search.similarity_search(query)
+        result = chain.run(input_documents=docs, question=query)
 
-    return jsonify(result)
-
+        return jsonify(result)
+    except Exception as e:
+        logger.exception("An error occurred in /webkorps_query endpoint.")
+        return jsonify({'error': 'Internal Server Error'}), 500
 
 
 @app.route('/summary', methods=['POST'])
@@ -111,28 +128,3 @@ def summary():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
