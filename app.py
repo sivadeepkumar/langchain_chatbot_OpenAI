@@ -126,5 +126,21 @@ def summary():
     return jsonify(result)
 
 
+@app.route('/forms', methods=['POST'])
+def forms():
+    data = request.get_json()
+    query = data['query']
+    source = data['source']
+
+
+    embeddings = OpenAIEmbeddings()  
+    document_search = FAISS.from_texts([source], embeddings)
+    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+
+    docs = document_search.similarity_search(query)
+    result = chain.run(input_documents=docs, question=query)
+
+    return jsonify(result)
+
 if __name__ == '__main__':
     app.run(debug=True)
