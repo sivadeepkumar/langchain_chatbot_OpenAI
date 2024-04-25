@@ -3,9 +3,6 @@ import os
 import sys
 import boto3
 from flask import Flask, request , jsonify
-# import nltk
-# from nltk.tokenize import sent_tokenize
-# nltk.download('punkt')  # Download the NLTK tokenizer data
 
 app = Flask(__name__)
 
@@ -18,31 +15,34 @@ from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
+from langchain_text_splitters import RecursiveJsonSplitter
 
 bedrock = boto3.client(service_name="bedrock-runtime", region_name='us-east-1')
-bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock)
+bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client = bedrock)
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
+def create_pdf_from_string(file_path, data_string):
+    # Create a canvas object
+    c = canvas.Canvas(file_path, pagesize=letter)
 
-# def manual_ingestion(source_data):
-#     # Split the source data into chunks (sentences)
-#     taj_mahal_text = """
-# The Taj Mahal is an iconic white marble mausoleum located in Agra, India. It was built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. Construction of the Taj Mahal began in 1632 and was completed in 1653, employing thousands of artisans and craftsmen.
+    # Define font and size
+    c.setFont("Helvetica", 12)
 
-# The Taj Mahal is renowned for its exquisite architecture, intricate carvings, and beautiful gardens. It is considered one of the finest examples of Mughal architecture, blending elements from Islamic, Persian, Ottoman Turkish, and Indian architectural styles.
+    # Split the data string into lines
+    lines = data_string.split('\n')
 
-# The main mausoleum is flanked by four minarets, reflecting in the adjacent Yamuna River, creating a stunning reflection that adds to its beauty. The interior of the Taj Mahal is adorned with intricate marble inlay work, precious and semi-precious stones, and intricate calligraphy from the Quran.
+    # Set initial y position for text
+    y_position = 750
 
-# Visitors from around the world come to admire the Taj Mahal's beauty, especially at sunrise and sunset when the changing light casts different hues on the marble, creating a mesmerizing sight. The Taj Mahal is a UNESCO World Heritage Site and is considered one of the Seven Wonders of the World.
+    # Write each line to the PDF
+    for line in lines:
+        c.drawString(100, y_position, line)
+        y_position -= 20  # Move down 20 units for the next line
 
-# """
-#     sentences = sent_tokenize(source_data+taj_mahal_text)
-#     import pdb ; pdb.set_trace()
-#     return sentences
+    # Save the PDF
+    c.save()
 
-def manual_vector_store(docs):
-    # Assuming bedrock_embeddings is defined somewhere
-    vectorstore_faiss = FAISS.from_texts(docs, bedrock_embeddings)
-    vectorstore_faiss.save_local("manual_index")
 
 
 def manual_ingestion(input_string):
@@ -62,6 +62,20 @@ def manual_ingestion(input_string):
 
 
 
+
+
+# manual_ingestion
+def manual_vector_store(docs):
+    # Assuming bedrock_embeddings is defined somewhere
+    vectorstore_faiss = FAISS.from_documents(docs, bedrock_embeddings)
+    vectorstore_faiss.save_local("manual_index")
+
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+def manual_ingestion(text_data):
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
+    docs = text_splitter.create_documents([text_data])
+    return docs
 
 # Data ingestion function
 def data_ingestion():
@@ -127,22 +141,17 @@ def llama2_response():
     return response
 
 
-
-
 @app.route('/mistral/source', methods=['POST'])
 def mistral_source():
     user_question = request.json['user_question']
-    source_data = request.json['source']
-
-    # Process the source data by splitting into chunks
+    source_data = request.json['source'] 
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
-
     # Load the FAISS index
     faiss_index = FAISS.load_local("manual_index", bedrock_embeddings, allow_dangerous_deserialization=True)
 
     # Assuming these functions are defined elsewhere
-    llm = get_mistral_llm()
+    llm = get_llama2_llm()
     response = get_response_llm(llm, faiss_index, user_question)
     return jsonify({'response': response})
 
@@ -150,12 +159,9 @@ def mistral_source():
 @app.route('/llama/source', methods=['POST'])
 def llama_source():
     user_question = request.json['user_question']
-    source_data = request.json['source']
-
-    # Process the source data by splitting into chunks
+    source_data = request.json['source'] 
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
-
     # Load the FAISS index
     faiss_index = FAISS.load_local("manual_index", bedrock_embeddings, allow_dangerous_deserialization=True)
 
@@ -198,9 +204,9 @@ def llama_form():
 
     # >>>>>
     # Process the source data by splitting into chunks
+    
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
-
     # Load the FAISS index
     faiss_index = FAISS.load_local("manual_index", bedrock_embeddings, allow_dangerous_deserialization=True)
 
@@ -262,6 +268,3 @@ def mistral_form():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
