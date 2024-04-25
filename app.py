@@ -126,6 +126,16 @@ def summary():
     return jsonify(result)
 
 
+def get_embedding(source,embeddings):
+    query = "Which form we need to create just one word answer like <Create the ________ form> in this format,I need to get the response"
+    document_search = FAISS.from_texts([source], embeddings)
+    chain = load_qa_chain(OpenAI(), chain_type="stuff")
+    docs = document_search.similarity_search(query)
+    result = chain.run(input_documents=docs, question=query)
+    cleaned_string = result.replace('\n', '')
+
+    return cleaned_string
+
 @app.route('/forms', methods=['POST'])
 def forms():
     """
@@ -137,26 +147,15 @@ def forms():
     """
     # Input query
     data = request.get_json()
-    input_text = data['query'].lower()
-
-
-    # <<<
-    query_words = input_text.split()
-    index_of_form = [i for i, word in enumerate(query_words) if word == "form"]
-
-    if index_of_form and index_of_form[0] > 0:
-        form_left_word_index = index_of_form[0] - 1
-        form_name = query_words[form_left_word_index] if form_left_word_index >= 0 else ""
-    else:
-        form_name = ""
-        
-    if form_name == "":
-        result =  "Please provide in proper format"
-        return jsonify(result)
-
-    # >>>
+    query = data["query"]
+    embeddings = OpenAIEmbeddings()
+    source = data['source']
+    # print(query)
+    # Method_2 
     
-    query_sub = f"provide me the relevant columns only for {form_name} would be"
+    query_words = get_embedding(query,embeddings)
+    print(query_words)  
+    query_sub = f"provide me the relevant columns only for {query_words} would be"
     # Fine-tuning rule to ensure all columns are included
     prompt_engineering = """
     NOTE: Neverever try to return all the fields or columns always go with minimal fields related to it.Please try to follow this note.
@@ -166,10 +165,6 @@ def forms():
     # Append the fine-tuning rule to the query
     query = query_sub +"\n\n" + prompt_engineering
 
-    source = data['source']
-
-
-    embeddings = OpenAIEmbeddings()  
     document_search = FAISS.from_texts([source], embeddings)
     chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
@@ -179,7 +174,47 @@ def forms():
     return jsonify(result)
 
 
-
-
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
+
+
+
+
+# input_text = data['query'].lower()
+# # <<<
+# query_words = input_text.split()
+# index_of_form = [i for i, word in enumerate(query_words) if word == "form"]
+
+# if index_of_form and index_of_form[0] > 0:
+#     form_left_word_index = index_of_form[0] - 1
+#     form_name = query_words[form_left_word_index] if form_left_word_index >= 0 else ""
+# else:
+#     form_name = ""
+    
+# if form_name == "":
+#     result =  "Please provide in proper format"
+#     return jsonify(result)
+
+# # >>>
+
+# query_sub = f"provide me the relevant columns only for {form_name} would be"
+# # Fine-tuning rule to ensure all columns are included
+# prompt_engineering = """
+# NOTE: Neverever try to return all the fields or columns always go with minimal fields related to it.Please try to follow this note.
+# Example : I have n number of fields.assume in that 10 for medical. If i ask i need to create medical list then you need to provide me that 10 fields only.That easy it is.
+# """
+
+# # Append the fine-tuning rule to the query
+# query = query_sub +"\n\n" + prompt_engineering
+
+# document_search = FAISS.from_texts([source], embeddings)
+# chain = load_qa_chain(OpenAI(), chain_type="stuff")
+
+# docs = document_search.similarity_search(query)
+# result = chain.run(input_documents=docs, question=query)
+
+# return jsonify(result)
