@@ -222,7 +222,7 @@ def get_mistral_llm():
     return llm
 
 def get_llama2_llm():
-    llm = Bedrock(model_id="meta.llama2-13b-chat-v1", client=bedrock, model_kwargs={'max_gen_len': 512})
+    llm = Bedrock(model_id="meta.llama3-70b-instruct-v1:0", client=bedrock, model_kwargs={'max_gen_len': 512})
     return llm
 
 # Prompt template for LLM responses
@@ -328,8 +328,9 @@ def mistral_form():
     source_data = request.json['source']
 
     query = get_first_embedding(user_question)
+
     print(query)
-    user_question = f"provide me the relevant columns only for {query} would be."
+    user_question = f"provide me the relevant columns name in array only for {query} would be."
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
 
@@ -350,7 +351,7 @@ def llama_form():
 
     query = get_first_embedding(user_question)
     print(query)
-    user_question = f"provide me the relevant columns only for {query} would be."
+    user_question = f"provide me the relevant columns name in array only for {query} would be."
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
 
