@@ -163,6 +163,7 @@ def forms():
         JSON: Summary generated based on the input query and source.
     """
     # Input query
+    # import pdb ; pdb.set_trace()
     embeddings = OpenAIEmbeddings()
     data = request.get_json()
     query = data["query"]
@@ -178,10 +179,10 @@ def forms():
     NOTE: Neverever try to return all the fields or columns always go with minimal fields related to it.Please try to follow this note.
     Example : I have n number of fields.assume in that 10 for medical. If i ask i need to create medical list then you need to provide me that 10 fields only.That easy it is.
     """
-    
+    # pdb.set_trace()
     # Append the fine-tuning rule to the query
     query = query_sub +"\n\n" + prompt_engineering
-
+    # query = f"Create the {query_words} form"
     document_search = FAISS.from_texts([source], embeddings)
     chain = load_qa_chain(OpenAI(), chain_type="stuff")
 
@@ -197,9 +198,9 @@ def manual_vector_store(docs):
     vectorstore_faiss.save_local("manual_index")
 
 
-def manual_ingestion(text_data):
+def manual_ingestion(source):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
-    docs = text_splitter.create_documents([text_data])
+    docs = text_splitter.create_documents([source])
     return docs
 
 # Data ingestion function
@@ -221,7 +222,7 @@ def get_mistral_llm():
     return llm
 
 def get_llama2_llm():
-    llm = Bedrock(model_id="meta.llama2-70b-chat-v1", client=bedrock, model_kwargs={'max_gen_len': 2048})
+    llm = Bedrock(model_id="meta.llama2-13b-chat-v1", client=bedrock, model_kwargs={'max_gen_len': 512})
     return llm
 
 # Prompt template for LLM responses
@@ -312,18 +313,27 @@ def mistral_source():
     result = chain.run(input_documents=docs, question=query)
     return jsonify(result)
 
+def get_first_embedding(source_data):
+    user_question = "Which form we need to create just one word answer like <Create the ________ form> in this format,I need to get the response"
+    docs = manual_ingestion(source_data)
+    manual_vector_store(docs)
+    faiss_index = FAISS.load_local("manual_index", bedrock_embeddings, allow_dangerous_deserialization=True)
+    llm = get_mistral_llm()
+    response = get_response_llm(llm, faiss_index, user_question)
+    return response
 
 @app.route('/mistral/form', methods=['POST'])
 def mistral_form():
     user_question = request.json['query']
-    source_data = request.json['source'] 
+    source_data = request.json['source']
+
+    query = get_first_embedding(user_question)
+    print(query)
+    user_question = f"provide me the relevant columns only for {query} would be."
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
 
-    user_question = f"""
-    {user_question}
-    from above line what feild are required to create that form
-    """
+    
     # FROM STORED DATA IT WILL RETRIEVE 
     faiss_index = FAISS.load_local("manual_index", bedrock_embeddings, allow_dangerous_deserialization=True)
 
@@ -336,16 +346,15 @@ def mistral_form():
 @app.route('/llama/form', methods=['POST'])
 def llama_form():
     user_question = request.json['query']
-    source_data = request.json['source'] 
+    source_data = request.json['source']
+
+    query = get_first_embedding(user_question)
+    print(query)
+    user_question = f"provide me the relevant columns only for {query} would be."
     docs = manual_ingestion(source_data)
     manual_vector_store(docs)
 
-    user_question = f"""
-    {user_question}
-    from above line what feild are required to create that form
-    """
-
-
+    
     # FROM STORED DATA IT WILL RETRIEVE 
     faiss_index = FAISS.load_local("manual_index", bedrock_embeddings, allow_dangerous_deserialization=True)
 
