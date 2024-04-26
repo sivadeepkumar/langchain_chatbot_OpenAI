@@ -34,6 +34,7 @@ logger = logging.getLogger(__name__)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 app = Flask(__name__)
+
 CORS(app)
 
 @app.route('/health', methods=['GET'])
@@ -153,7 +154,7 @@ def get_embedding(source,embeddings):
 
     return cleaned_string
 
-@app.route('/forms', methods=['POST'])
+@app.route('/openai/form', methods=['POST'])
 def forms():
     """
     Generates a summary based on the input query and source.
@@ -174,6 +175,7 @@ def forms():
     query_words = get_embedding(query,embeddings)
     print(query_words)  
     query_sub = f"provide me the relevant columns only for {query_words} would be"
+    # query_sub = f"provide me the relevant columns name in array only for {query} would be."
     # Fine-tuning rule to ensure all columns are included
     prompt_engineering = """
     NOTE: Neverever try to return all the fields or columns always go with minimal fields related to it.Please try to follow this note.
