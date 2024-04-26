@@ -191,7 +191,7 @@ def forms():
     docs = document_search.similarity_search(query)
     result = chain.run(input_documents=docs, question=query)
 
-    return jsonify(result)
+    return jsonify({'response': result})
 
 # manual_ingestion
 def manual_vector_store(docs):
@@ -256,7 +256,7 @@ def mistral_response():
     faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings, allow_dangerous_deserialization=True)
     llm = get_mistral_llm()
     response = get_response_llm(llm, faiss_index, user_question)
-    return response
+    return jsonify(response)
 
 # Route for Llama2 model response using POST request
 @app.route('/llama2_response', methods=['POST'])
@@ -265,7 +265,7 @@ def llama2_response():
     faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings, allow_dangerous_deserialization=True)
     llm = get_llama2_llm()
     response = get_response_llm(llm, faiss_index, user_question)
-    return response
+    return jsonify(response)
 
 
 
